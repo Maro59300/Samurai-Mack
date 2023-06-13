@@ -1,0 +1,225 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', cursive;
+      text-align: center;
+    }
+    .hotkeys p:first-child {
+      text-align: left;
+    }
+    .hotkeys {
+      position: absolute;
+      top: 510px;
+      left: 20px;
+      color: white;
+      font-size: 13px;
+      text-align: left;
+    }
+    body {
+      background-color: rgb(73, 69, 69);
+      
+      
+    }
+    header {    
+      background-color: rgb(73, 69, 69);
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-container {
+      display: flex;
+      background-color: transparent;
+      justify-content: center ;
+      text-align: center;
+      
+      
+    }
+
+    .header-button:hover {
+      
+       color: rgb(207, 201, 116);
+    }
+
+    .header-button {
+      background-color: transparent;
+      border: none;
+      color: rgb(0, 0, 0);
+      font-size: 15px;
+      margin:  10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<header>
+  <div class="button-container">
+    <a href="index.html" class="header-button" id="Game">Game</a>
+    <a href="Gamedoc.html" class="header-button" id="GameDoc">Documentation</a>
+
+  </div>
+</header>
+
+
+<body>
+  <!-- red container div -->
+  <div style="position: relative; display: inline-block;">
+    <!-- smaller red container div -->
+    <div
+      style="
+        position: absolute;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+      "
+    >
+      <!-- player health -->
+      <div
+        style="
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          border-top: 4px solid white;
+          border-left: 4px solid white;
+          border-bottom: 4px solid white;
+        "
+      >
+        <div style="background-color: rgba(65, 25, 25, 0.692); height: 30px; width: 100%"></div>
+        <div
+          id="playerHealth"
+          style="
+            position: absolute;
+            background: #6e4444;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+          "
+        ></div>
+      </div>
+
+      <!-- timer -->
+      <div
+        id="timer"
+        style="
+          background-color: rgb(10, 10, 10);
+          width: 100px;
+          height: 50px;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          border: 4px solid white;
+        "
+      >
+        10
+      </div>
+      <!-- enemy health -->
+      <div
+        style="
+          position: relative;
+          width: 100%;
+          border-top: 4px solid white;
+          border-bottom: 4px solid white;
+          border-right: 4px solid white;
+        "
+      >
+        <div style="background-color: rgba(36, 85, 100, 0.705); height: 30px"></div>
+        <div
+          id="enemyHealth"
+          style="
+            position: absolute;
+            background: #467fad;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          "
+        ></div>
+        
+      </div>
+      <div></div>
+    </div>
+    <div
+      id="displayText"
+      style="
+        position: absolute;
+        color: rgb(114, 80, 80);
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 120;
+        left: 0;
+        display: none;
+        font-size: 30;
+      "
+    >
+      Tie
+    </div>
+    <div
+      id="displayText2"
+      style="
+        position: absolute;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 50;
+        left: 0;
+        display: none;
+      "
+    >
+      Tie
+    </div>
+    <div
+      id="displayText3"
+      style="
+        position: absolute;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        font-size: 14;
+      "
+    >
+      Tie
+    </div>
+    <canvas></canvas>
+    <div class="hotkeys"  >
+          
+      <p>Player1( Move: (A,D,W)   Attack: (Spacebar) )</p>
+      <p>Player2( Move: (left,up,right)   Attack: (down) )</p>
+
+      </div>
+  </div>
+
+  <div style="font-size: small; margin-top: 5em;">
+    <p>© 2023 Soliman Marawan,inc. All rights reserved.</p>
+  </div>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="index.js"></script>
+</body>
