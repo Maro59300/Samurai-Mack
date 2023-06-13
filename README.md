@@ -8,6 +8,10 @@ Kenji is a swift and nimble samurai who uses a combination of speed and agility 
 Mack, on the other hand, is a hulking samurai who relies on his strength and raw power to overwhelm his foe.
 
 
+# View 
+
+Link: https://schueler.bulme.at/~marawan.soliman/FightGame/
+
 # Gameplay
 
 In Samurai Mack, players control either Kenji or Mack in a one-on-one battle against their opponent. Each character has a unique Attack and Samurai speed that they can use to outmaneuver and defeat their opponent.
