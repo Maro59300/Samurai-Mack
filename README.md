@@ -32,7 +32,7 @@ Player 2: Kenji
 
 # Upcoming Updates
 
-  Working on adding another Attack and a Block maneuver.
-  Working on a Single Player Mode.
+ 1- Working on adding another Attack and a Block maneuver.
+ 2- Working on a Single Player Mode.
 
 
